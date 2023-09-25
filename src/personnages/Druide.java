@@ -32,7 +32,7 @@ public class Druide {
 			Random rand = new Random();
 			int puissance =
 					rand.nextInt(effetPotionMax-effetPotionMin)+effetPotionMin;
-			if (puissance<7) {
+			if (puissance>7) {
 				parler("j'ai prepare une super potion de force"+String.valueOf(puissance));
 			}else {
 				parler("je n'ai pas trouve tous les ingredients , ma potion est seulement de force"+String.valueOf(puissance));
@@ -41,11 +41,25 @@ public class Druide {
 			return puissance;
 		}
 		
+			
+			public static void main(String [] args) {
+				Druide panoramix=new Druide("panoramix",5,10);
+				panoramix.preparerPotion();
+				
+			}
+			public void booster(Gaulois gaulois) {
+				if (gaulois.getNom()=="Obelix") {
+					parler("Non Obelix!tu n'aura pas de potion magique!");
+					
+				}
+				else {				
+				gaulois.boirpotion(forcePotion);
 			}
 			
 			
-		}
+			}
+}
 
-		}
+		
 
 
