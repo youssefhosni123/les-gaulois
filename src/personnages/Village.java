@@ -34,8 +34,6 @@ public class Village {
 		public static void main (String[]args) {
 			Village  villageirreductible;
 			villageirreductible=new Village ("Irreductibles",30);	
-		//Gaulois gaulois = village.trouverHabitant(30);
-		//car le dernier element est 29 pas 30
 		   Chef chef;
 		   chef=new Chef("Abraracourcix",6,villageirreductible);
 		   Gaulois asterix;

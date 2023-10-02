@@ -28,8 +28,15 @@ public class Romain {
 			} else {
 				parler("J'abandonne...");
 			}
+			assert invariantEstvalide();
 		}
-		
+		private boolean invariantEstvalide() {
+			return force>0;
+		}
+		public static void main(String[]args) {
+			Romain Minus;
+			Minus=new Romain("Minus",-6);
+		}
 }
 
 
